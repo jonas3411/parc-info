@@ -3,33 +3,41 @@
 require_once("dbConnection.php");
 
 // Fetch data in descending order (lastest entry first)
-$result = mysqli_query($mysqli, "SELECT * FROM users ORDER BY id DESC");
+$result = mysqli_query($mysqli, "SELECT * FROM parc ORDER BY id DESC");
 ?>
 
 <html>
 <head>	
 	<title>Homepage</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<h2>Homepage</h2>
+	<h2>Parc Info</h2>
 	<p>
-		<a href="add.php">Add New Data</a>
+		<a href="add.php" class="add">Add New Data</a>
 	</p>
 	<table width='80%' border=0>
 		<tr bgcolor='#DDDDDD'>
-			<td><strong>Name</strong></td>
-			<td><strong>Age</strong></td>
-			<td><strong>Email</strong></td>
-			<td><strong>Action</strong></td>
+			<td><strong>Nom de l'appareil</strong></td>
+			<td><strong>Nom d'utilisateur assigné</strong></td>
+			<td><strong>Numéro de série</strong></td>
+			<td><strong>Adresse IPV4</strong></td>
+			<td><strong>Modèle</strong></td>
+			<td><strong>Composants pricipaux</strong></td>
+			<td><strong>Version d'OS</strong></td>
 		</tr>
 		<?php
 		// Fetch the next row of a result set as an associative array
 		while ($res = mysqli_fetch_assoc($result)) {
 			echo "<tr>";
 			echo "<td>".$res['name']."</td>";
-			echo "<td>".$res['age']."</td>";
-			echo "<td>".$res['email']."</td>";	
+			echo "<td>".$res['user']."</td>";
+			echo "<td>".$res['serie']."</td>";
+			echo "<td>".$res['ip']."</td>";	
+			echo "<td>".$res['modele']."</td>";
+			echo "<td>".$res['composants']."</td>";
+			echo "<td>".$res['os']."</td>";	
 			echo "<td><a href=\"edit.php?id=$res[id]\">Edit</a> | 
 			<a href=\"delete.php?id=$res[id]\" onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a></td>";
 		}

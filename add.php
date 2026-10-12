@@ -1,6 +1,7 @@
 <html>
 <head>
 	<title>Add Data</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -16,12 +17,28 @@
 				<td><input type="text" name="name"></td>
 			</tr>
 			<tr> 
-				<td>Age</td>
-				<td><input type="text" name="age"></td>
+				<td>User</td>
+				<td><input type="text" name="user"></td>
 			</tr>
 			<tr> 
-				<td>Email</td>
-				<td><input type="text" name="email"></td>
+				<td>Serie</td>
+				<td><input type="text" name="serie"></td>
+			</tr>
+						<tr> 
+				<td>Ip</td>
+				<td><input type="text" name="ip"></td>
+			</tr>
+						<tr> 
+				<td>Modele</td>
+				<td><input type="text" name="modele"></td>
+			</tr>
+						<tr> 
+				<td>Composants</td>
+				<td><input type="text" name="composants"></td>
+			</tr>
+						<tr> 
+				<td>Os</td>
+				<td><input type="text" name="os"></td>
 			</tr>
 			<tr> 
 				<td></td>
