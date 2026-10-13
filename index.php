@@ -17,15 +17,15 @@ $result = mysqli_query($mysqli, "SELECT * FROM parc ORDER BY id DESC");
 	<p>
 		<a href="add.php" class="add">Add New Data</a>
 	</p>
-	<table width='80%' border=0>
-		<tr bgcolor='#DDDDDD'>
-			<td><strong>Nom de l'appareil</strong></td>
-			<td><strong>Nom d'utilisateur assigné</strong></td>
-			<td><strong>Numéro de série</strong></td>
-			<td><strong>Adresse IPV4</strong></td>
-			<td><strong>Modèle</strong></td>
-			<td><strong>Composants pricipaux</strong></td>
-			<td><strong>Version d'OS</strong></td>
+	<table>
+		<tr>
+			<td class="index"><strong>Nom de l'appareil</strong></td>
+			<td class="index"><strong>Nom d'utilisateur assigné</strong></td>
+			<td class="index"><strong>Numéro de série</strong></td>
+			<td class="index"><strong>Adresse IPV4</strong></td>
+			<td class="index"><strong>Modèle</strong></td>
+			<td class="index"><strong>Composants pricipaux</strong></td>
+			<td class="index"><strong>Version d'OS</strong></td>
 		</tr>
 		<?php
 		// Fetch the next row of a result set as an associative array
