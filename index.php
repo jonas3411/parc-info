@@ -17,8 +17,8 @@ $result = mysqli_query($mysqli, "SELECT * FROM parc ORDER BY id DESC");
 	<p>
 		<a href="add.php" class="add">Add New Data</a>
 	</p>
-	<table width='80%' border=0>
-		<tr bgcolor='#DDDDDD'>
+	<table>
+		<tr class="tr1">
 			<td><strong>Nom de l'appareil</strong></td>
 			<td><strong>Nom d'utilisateur assigné</strong></td>
 			<td><strong>Numéro de série</strong></td>
