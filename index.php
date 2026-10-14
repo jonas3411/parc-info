@@ -18,6 +18,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM parc ORDER BY id DESC");
 		<a href="add.php" class="add">Add New Data</a>
 	</p>
 	<table>
+		<thead>
 		<tr class="tr1">
 			<td><strong>Nom de l'appareil</strong></td>
 			<td><strong>Nom d'utilisateur assigné</strong></td>
@@ -27,10 +28,13 @@ $result = mysqli_query($mysqli, "SELECT * FROM parc ORDER BY id DESC");
 			<td><strong>Composants pricipaux</strong></td>
 			<td><strong>Version d'OS</strong></td>
 		</tr>
+		</thead>
+		<br>
+		<tbody>
 		<?php
 		// Fetch the next row of a result set as an associative array
 		while ($res = mysqli_fetch_assoc($result)) {
-			echo "<tr>";
+			echo "<tr class=\"tr2\">";
 			echo "<td>".$res['name']."</td>";
 			echo "<td>".$res['user']."</td>";
 			echo "<td>".$res['serie']."</td>";
@@ -42,6 +46,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM parc ORDER BY id DESC");
 			<a href=\"delete.php?id=$res[id]\" onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a></td>";
 		}
 		?>
+		</tbody>
 	</table>
 </body>
 </html>

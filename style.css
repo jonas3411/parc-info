@@ -1,10 +1,40 @@
 input[type="text"]{
     height: 40px;
     width: 350px;
-    border: 3px solid black;
+    border: 1px solid rgb(184, 183, 183);
+    box-shadow: 0px 3px 10px 0px rgb(184, 183, 183);
     border-radius: 10px;
     padding-left: 8px;
     font-size: large;
+    outline: 0px;
+}
+input[type="text"]:focus{
+    height: 40px;
+    width: 350px;
+    border: 1px solid rgb(184, 183, 183);
+    box-shadow: 2px 5px 12px 2px rgb(167, 166, 166);
+    border-radius: 10px;
+    padding-left: 8px;
+    font-size: large;
+    outline: 0px;
+}
+input[type="submit"]{
+    height: 40px;
+    width: 95px;
+    border: 1px solid rgb(184, 183, 183);
+    border-radius: 10px;
+    font-size: 18px;
+    transition-duration: 0.3s;
+}
+input[type="submit"]:hover{
+    height: 40px;
+    width: 95px;
+    border: 1px solid rgb(184, 183, 183);
+    box-shadow: 0px 3px 10px 0px rgb(184, 183, 183);
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition-duration: 0.3s;
 }
 table{
     margin-top: 150px;
@@ -12,12 +42,18 @@ table{
     font-size: large;
     font-family: Trebuchet MS, sans-serif;
     text-align: center;
-    border-spacing: 5px 10px;
+    border: 0px;
+    box-shadow: 1px 3px 8px 1px rgb(184, 183, 183);
+    border-radius: 20px;
+    padding: 20px;
+}
+.tr1{
+    border: 1px solid black;
 }
 tr[class="tr1"] td{
-    background-color: rgb(212, 212, 212);
-    border: 1px solid rgb(212, 212, 212);
-    border-radius: 15px;
+    background-color: rgb(235, 235, 235);
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 10px;
 }
 td{
     height: 30px;
@@ -37,15 +73,30 @@ h2{
     font-size: 30px;
     font-family: Trebuchet MS, sans-serif;
 }
-input[type="submit"]{
-    height: 40px;
-    width: 95px;
-    border: 3px solid black;
-    border-radius: 10px;
-    font-size: large;
-}
 .add{
     position: absolute;
     left: 225px;
     top: 225px;
+}
+.update{
+    color: green;
+    font-size: xx-large;
+    font-family: Trebuchet MS, sans-serif;   
+}
+.addlink{
+    color: rgb(26, 1, 116);
+    font-family: Trebuchet MS, sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+}
+.divadd{
+    height:fit-content;
+    width: 30%;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    background-color: rgba(197, 197, 197, 0.664);
+    text-align: center;
+    padding-bottom: 4%;
+    padding-top: 1%;
 }

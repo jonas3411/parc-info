@@ -14,31 +14,31 @@
 		<table width="25%" border="0">
 			<tr> 
 				<td>Name</td>
-				<td><input type="text" name="name"></td>
+				<td><input type="text" name="name" autocomplete="off"></td>
 			</tr>
 			<tr> 
 				<td>User</td>
-				<td><input type="text" name="user"></td>
+				<td><input type="text" name="user" autocomplete="off"></td>
 			</tr>
 			<tr> 
 				<td>Serie</td>
-				<td><input type="text" name="serie"></td>
+				<td><input type="text" name="serie" autocomplete="off"></td>
 			</tr>
 						<tr> 
 				<td>Ip</td>
-				<td><input type="text" name="ip"></td>
+				<td><input type="text" name="ip" autocomplete="off"></td>
 			</tr>
 						<tr> 
 				<td>Modele</td>
-				<td><input type="text" name="modele"></td>
+				<td><input type="text" name="modele" autocomplete="off"></td>
 			</tr>
 						<tr> 
 				<td>Composants</td>
-				<td><input type="text" name="composants"></td>
+				<td><input type="text" name="composants" autocomplete="off"></td>
 			</tr>
 						<tr> 
 				<td>Os</td>
-				<td><input type="text" name="os"></td>
+				<td><input type="text" name="os" autocomplete="off"></td>
 			</tr>
 			<tr> 
 				<td></td>
