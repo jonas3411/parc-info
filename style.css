@@ -37,7 +37,7 @@ input[type="submit"]:hover{
     transition-duration: 0.3s;
 }
 table{
-    margin-top: 150px;
+    margin-top: 130px;
     margin-left: 20%;
     font-size: large;
     font-family: Trebuchet MS, sans-serif;
@@ -75,8 +75,8 @@ h2{
 }
 .add{
     position: absolute;
-    left: 225px;
-    top: 225px;
+    left: 235px;
+    top: 290px;
 }
 .update{
     color: green;
